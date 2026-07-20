@@ -298,3 +298,68 @@ button {
   color: #1a140c;
   font-weight: 600;
 }
+
+.help-link-wrap {
+  margin: 1.75rem 0 0;
+  text-align: center;
+}
+
+.help-link {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.help-link:hover {
+  color: var(--amber);
+}
+
+.help-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: end center;
+  padding: 1rem;
+  background: rgba(8, 14, 12, 0.55);
+  backdrop-filter: blur(6px);
+}
+
+.help-sheet {
+  width: min(40rem, 100%);
+  max-height: min(80dvh, 36rem);
+  overflow: auto;
+  padding: 1.35rem 1.25rem 1.5rem;
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+  background: #152621;
+  border: 1px solid var(--line);
+  animation: rise 0.35s ease-out both;
+}
+
+.help-sheet h2 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-brand);
+  font-size: 1.55rem;
+  font-weight: 400;
+}
+
+.help-steps {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.help-steps a {
+  color: var(--amber);
+}
+
+.help-note {
+  margin: 0 0 1.1rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
