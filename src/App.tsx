@@ -10,6 +10,7 @@ export default function App() {
   const [busyId, setBusyId] = useState<string | null>(null)
   const [loadError, setLoadError] = useState<string | null>(null)
   const [online, setOnline] = useState(navigator.onLine)
+  const [showHelp, setShowHelp] = useState(false)
   const player = usePlayer()
 
   useEffect(() => {
@@ -146,7 +147,53 @@ export default function App() {
             )
           })}
         </ul>
+
+        <p className="help-link-wrap">
+          <button type="button" className="help-link" onClick={() => setShowHelp(true)}>
+            如何更新节目
+          </button>
+        </p>
       </main>
+
+      {showHelp && (
+        <div className="help-overlay" role="dialog" aria-modal="true" aria-labelledby="help-title">
+          <div className="help-sheet">
+            <h2 id="help-title">如何更新节目</h2>
+            <ol className="help-steps">
+              <li>跟 Cursor 说你想听什么、用什么口吻。</li>
+              <li>
+                把讲稿上传到仓库的{' '}
+                <a
+                  href="https://github.com/i71365689-blip/walk-listen/upload/main/content/episodes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  content/episodes
+                </a>
+                ，或在 GitHub 网页里直接改 .md。
+              </li>
+              <li>
+                打开{' '}
+                <a
+                  href="https://github.com/i71365689-blip/walk-listen/actions"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Actions
+                </a>
+                ，等「Generate TTS」和「Deploy」跑完。
+              </li>
+              <li>回到本页刷新，就能听到新节目。</li>
+            </ol>
+            <p className="help-note">
+              不用在电脑开后台、不用监听端口。调音色改讲稿里的 voice / rate / pitch 即可。
+            </p>
+            <button type="button" className="chip primary" onClick={() => setShowHelp(false)}>
+              知道了
+            </button>
+          </div>
+        </div>
+      )}
 
       <footer className={`player ${player.episode ? 'visible' : ''}`}>
         {player.episode && (
