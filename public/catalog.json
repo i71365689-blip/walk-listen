@@ -1,3 +1,81 @@
 {
-  "episodes": []
+  "episodes": [
+    {
+      "id": "agent-too-many-skills",
+      "title": "Skill 太多也头疼：海量能力怎么加载",
+      "description": "Agent 能力膨胀后，如何路由、分层、设预算，避免上下文被撑爆。",
+      "audio": "/audio/agent-too-many-skills.mp3",
+      "script": "content/episodes/agent-too-many-skills.md",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "tone": "口语闲聊·工程实践"
+    },
+    {
+      "id": "embedding-explained",
+      "title": "Embedding 到底是什么",
+      "description": "用走路能听懂的话，拆开向量、相似度和 RAG 检索底座。",
+      "audio": "/audio/embedding-explained.mp3",
+      "script": "content/episodes/embedding-explained.md",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "tone": "口语闲聊·入门拆解"
+    },
+    {
+      "id": "learn-agent-from-source",
+      "title": "把 Agent 源码读成一本书",
+      "description": "与其追热点名词，不如把源码拆成可复述的知识地图：规划、工具、记忆、循环。",
+      "audio": "/audio/learn-agent-from-source.mp3",
+      "script": "content/episodes/learn-agent-from-source.md",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "tone": "口语闲聊·学习方法"
+    },
+    {
+      "id": "llm-batch-partial-success",
+      "title": "大模型批处理为何要「部分成功」",
+      "description": "批量任务为什么不能失败即全军覆没？可恢复、可追踪、可补偿。",
+      "audio": "/audio/llm-batch-partial-success.mp3",
+      "script": "content/episodes/llm-batch-partial-success.md",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "tone": "口语闲聊·系统设计"
+    },
+    {
+      "id": "memory-eval-five",
+      "title": "怎么评测记忆系统：五个方面",
+      "description": "Agent 记忆别只看“能记住”。从写入、检索、更新、一致性到任务收益来评。",
+      "audio": "/audio/memory-eval-five.mp3",
+      "script": "content/episodes/memory-eval-five.md",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "tone": "口语闲聊·评测思路"
+    },
+    {
+      "id": "rag-hallucination-prod",
+      "title": "RAG 幻觉怎么压，生产级怎么落地",
+      "description": "面试常问：幻觉能根治吗？生产级检索增强到底怎么做。",
+      "audio": "/audio/rag-hallucination-prod.mp3",
+      "script": "content/episodes/rag-hallucination-prod.md",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "tone": "口语闲聊·面试干货"
+    },
+    {
+      "id": "skill-loading-basics",
+      "title": "大模型系统里的 Skill 是怎么加载的",
+      "description": "Skill 不是一次性塞进提示词，而是可插拔能力包的加载与路由。",
+      "audio": "/audio/skill-loading-basics.mp3",
+      "script": "content/episodes/skill-loading-basics.md",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "tone": "口语闲聊·Agent基础"
+    }
+  ]
 }
