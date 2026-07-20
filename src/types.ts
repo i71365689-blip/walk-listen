@@ -5,6 +5,9 @@ export type Episode = {
   audio: string
   script?: string
   voice?: string
+  rate?: string
+  pitch?: string
+  tone?: string
   durationHint?: string
 }
 
